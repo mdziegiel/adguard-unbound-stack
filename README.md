@@ -95,3 +95,10 @@ This project documents a homelab DNS stack as a designed and operated system.
 ## 🎯 Purpose
 
 This project documents a homelab DNS stack as a designed and operated system.
+
+## 📈 Future Improvements
+
+- Add DNSSEC validation in Unbound
+- Add Prometheus + Grafana for DNS metrics
+- Add health checks for failover validation
+- Add DoT/DoH upstream support
