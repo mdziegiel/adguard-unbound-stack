@@ -4,6 +4,35 @@ A redundant, privacy-focused DNS setup using AdGuard for filtering and Unbound f
 
 ---
 
+## 🖼 Architecture Diagram
+
+```text
+Clients (PCs, IoT)
+        |
+        v
++-----------------------+
+|   AdGuard Primary     |
+|     10.10.10.21       |
++-----------------------+
+        |
+        |  (Failover)
+        v
++-----------------------+
+|   AdGuard Secondary   |
+|     10.10.10.157      |
++-----------------------+
+        |
+        v
++-----------------------+
+|     Unbound DNS       |
+|   10.10.10.23:5335    |
++-----------------------+
+        |
+        v
+     Internet
+
+---
+
 ## 📌 Overview
 
 - Dual AdGuard servers for redundancy
@@ -63,6 +92,10 @@ Using `adguardhome-sync`:
 - [Failover](docs/failover.md)
 
 ---
+
+## 🎯 Purpose
+
+This project documents a homelab DNS stack as a designed and operated system.
 
 ## 🎯 Purpose
 
