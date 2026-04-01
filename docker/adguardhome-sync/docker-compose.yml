@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  adguardhome-sync:
+    image: ghcr.io/bakito/adguardhome-sync:latest
+    container_name: adguardhome-sync
+    restart: unless-stopped
+
+    environment:
+      - ORIGIN_URL=http://10.10.10.21
+      - ORIGIN_USERNAME=admin
+      - ORIGIN_PASSWORD=REPLACE_ME
+
+      - REPLICA_URL=http://10.10.10.157
+      - REPLICA_USERNAME=admin
+      - REPLICA_PASSWORD=REPLACE_ME
+
+      - CRON=*/1 * * * *
+
+    ports:
+      - 8080:8080
