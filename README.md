@@ -59,8 +59,8 @@ Using `adguardhome-sync`:
 
 ## 📚 Documentation
 
-- Architecture: docs/architecture.md  
-- Failover: docs/failover.md  
+- [Architecture](docs/architecture.md)
+- [Failover](docs/failover.md)
 
 ---
 
