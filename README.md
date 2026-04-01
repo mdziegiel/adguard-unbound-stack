@@ -35,10 +35,3 @@ AdGuard (Primary / Secondary) [Port 53]
 Unbound (10.10.10.23:5335)
   ↓
 Internet
-
----
-
-## 📚 Documentation
-
-- [Architecture](docs/architecture.md)
-- [Failover Behavior](docs/failover.md)
