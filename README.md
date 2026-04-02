@@ -6,26 +6,7 @@ A redundant, privacy-focused DNS setup using AdGuard for filtering and Unbound f
 
 ## 🖼 Architecture Diagram
 
-```text
-Clients (PCs, IoT)
-        |
-        v
-+-----------------------+        +-----------------------+
-|   AdGuard Primary     |        |   AdGuard Secondary   |
-|     10.10.10.21       |        |     10.10.10.157      |
-+-----------------------+        +-----------------------+
-        |                                 |
-        |                                 |
-        +---------------+-----------------+
-                        |
-                        v
-              +-----------------------+
-              |     Unbound DNS       |
-              |   10.10.10.23:5335    |
-              +-----------------------+
-                        |
-                        v
-                     Internet
+<img src="architecture.png" width="750"/>
 ---
 
 ## 📌 Overview
