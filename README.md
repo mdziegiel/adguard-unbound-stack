@@ -6,7 +6,7 @@ A redundant, privacy-focused DNS setup using AdGuard for filtering and Unbound f
 
 ## 🖼 Architecture Diagram
 
-<img src="docs/architecture.png" width="700"/>
+<img src="docs/architecture.png" width="750" height="850"/>
 ---
 
 ## 📌 Overview
